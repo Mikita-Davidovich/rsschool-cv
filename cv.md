@@ -8,12 +8,28 @@ Beginner Front-End developer with no programming experience. I am interested in 
 * Email : tosblrodo@gmail.com
 * Phone : +375336775787
 * Telegram : +375336775787 or Nikita Davidovich
+* [Vk.com](https://vk.com/id465879712)
 
 **Skills**:
 * Programming language : **JavaSrcipt**
 * Operation systems : **Windows**
 * Version control system : **Git**
 * Development tools : **VScode**
+
+**Code examples**
+
+    Coming soon
+**Education** :
+
+Brest State Technical University Brest, 2012-2017.
+
+**Specialty**: *logistics-economist*
+
+Student EPAM UPSkill Lab
+
+**Languages** :
+
+English - A1+
 
 
 
