@@ -18,7 +18,8 @@ Beginner Front-End developer with no programming experience. I am interested in 
 
 **Code examples**
 
-    Coming soon
+Coming soon
+
 **Education** :
 
 Brest State Technical University Brest, 2012-2017.
