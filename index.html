@@ -3,52 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Mikita Davidovich</title>
+  <title  >Resume Mikita Davidovich</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Image\My photo.png">
+  
 </head>
 <body>
-  <header>
-    <h1>Mikita Davidovich</h1>
-    <img src="Image\My photo.png" alt="My photo" width="100">
-    <p>Objective : Junior Front-end Developer</p>
-    <address>
-      <h2>My contacts :</h2>
-        <ul>
-          <li>Email : <a href="mailto:tosblrodo@gmail.com">tosblrodo@gmail.com</a></li>
-          <li>Phone : <a href="tel:+375336775787">+375336775787</a></li>
-          <li>Telegram : Mikita Davidovich</li>
-          <li>Vk.com : <a href="https://vk.com/id465879712">Link to my page</a></li>
-        </ul>
-    </address>
-  </header>
   <main>
-    <section>
-      <h2>Skills :</h2>
-        <ul>
-          <li>Programming language : JavaScript</li>
-          <li>Operation systems : Windows</li>
-          <li>Version control system : Git</li>
-          <li>Development tools : VScode</li>
-        </ul>
-    </section>
-    <section>
-      <h2>Education :</h2>
-        <ul>
-          <li>Brest State Technical University Brest, 2012-2017.Specialty: logistics-economist</li>
-          <li>Student EPAM UPSkill Lab</li> 
-        </ul>
-    </section>
-    <section>
-      <h2>Languages :</h2>
-        <ul>
-          <li>English A1+</li> 
-        </ul>
-    </section>
-    <section>
-      <h2>Some information about me:</h2>
-        <p>Beginner Front-End developer with no programming experience. I am interested in making the world a better place and making good money. I am a communicative, responsible, efficient, educated person. I join any team without problems, I will find a common language with any person. I have a great desire to reach maximum heights in this direction, as well as to master other directions.</p>
-    </section>
+  <header class="flexHeader">
+    <div class="info">
+      <h1 class="name" >Mikita Davidovich</h1>
+      <p class="object"><span class="word">Objective :</span> Junior Front-end Developer</p>   
+      <address>
+          <h2 class="contact">My contacts </h2>
+          <div class="connection">
+            <p><i class="fas fa-envelope-square"></i> <a href="mailto:tosblrodo@gmail.com" target="blank">tosblrodo@gmail.com</a></p>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+375336775787">+375336775787</a></p>
+            <p><i class="fab fa-telegram-plane"> </i><a href = "https://web.telegram.org/#/im?p=u366108976_12525811348543316456" target="blank"> Mikita Davidovich</a></p>
+            <p><i class="fab fa-vk"></i> <a href="https://vk.com/id465879712" target="blank">Link to my page</a></p>
+          </div>
+          </address>
+    </div>
+    <img src="https://raw.githubusercontent.com/Mikita-Davidovich/rsschool-cv/rsschool-cv-html/Image/My%20photo.png" alt="My photo" >
+  </header>
+  <section class="about-me">
+    <h2 >Some information about me</h2>
+    <p class="info-about-me">Beginner Front-End developer with no programming experience. I am interested in making the world a better place and making good money. I am a communicative, responsible, efficient, educated person. I join any team without problems, I will find a common language with any person. I have a great desire to reach maximum heights in this direction, as well as to master other directions.</p>
+  </section>
+  <section class="sel">
+    <div class="skills">
+          <h2 >Skills </h2>
+        <div class="number-skills">
+          <p>Programming language : <span class="collor">JavaScript</span><i class="fab fa-js"></i></p>
+          <p>Operation systems :<span class="collor"> Windows</span><i class="fab fa-windows"></i></p>
+          <p>Version control system :<span class="collor"> Git</span><i class="fab fa-github-square"></i></p>
+          <p>Development tools :<span class="collor">VScode</span></p>
+        </div>
+      </div>
+    <div class="education">
+        <h2>Education </h2>
+          <p>Brest State Technical University, 2012-2017.<p class="collor">Specialty: logistics-economist</p></p>
+          <p >Student EPAM UPSkill Lab</p> 
+    </div>
+    <div class="lang">
+    <h2 >Languages </h2>
+          <p class="collor">English A1+</p> 
+  </div>
+    </div>
+  </section>
     </main>
 </body>
 </html>

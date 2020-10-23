@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-direction: column;
+
+}
+img{
+    width: 35%;
+    height: 80%;
+    order: +2;
+    
+}
+.flexHeader{
+    display: flex;
+    justify-content: space-between;
+
+}   
+.info{
+    display: flex;
+    flex-direction: column;   
+}
+.object{
+    flex-basis: 100%; width: max-content;
+    background: rgba(105, 105, 105, 0.3);
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 0px;
+}
+main{
+    background-color:white;
+    padding: 5% 5%;
+}
+.sel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.name{
+    font-size: 70px;
+    margin-top: 0px;
+}
+.contact{
+    font-size: 40px;
+    margin: 0px;
+}
+.connection{
+    font-size: 20px;
+    text-decoration: none;
+}
+.connection p a{
+    text-decoration: none;
+    color: black;
+    
+}
+.connection p a:hover{
+    color: magenta;  
+}
+.word{
+    font-weight: bold;
+}
+.about-me{
+    font-size: 20px;
+}
+.info-about-me{
+    margin: 0px;
+    position: relative;
+}
+.lang p , .skills p , .education p{
+    font-size: 20px;
+    margin: 0px;
+}
+.collor{
+    background: rgb(255, 255, 0);
+}
+.connection p:hover{
+    transform: translateX(5px); 
+}
+.info-about-me::before{
+    content: '';
+    height: 100%;
+    width: 10px;
+    background: seagreen;
+    position: absolute;
+    left: -5.55%;
+}
