@@ -42,13 +42,13 @@ function setBackgroundGreeting() {
     hour = today.getHours();
 
   if (hour < 12) {
-    document.body.style.backgroundImage = 'url(../images/morning.jpg)';
+    document.body.style.backgroundImage = 'url(images/morning.jpg)';
     greeting.textContent = 'Good Morning';
   } else if (hour < 18){
-    document.body.style.backgroundImage = 'url(../images/afternoon.jpg)';
+    document.body.style.backgroundImage = 'url(images/afternoon.jpg)';
     greeting.textContent = 'Good Afternoon';
   } else {
-    document.body.style.backgroundImage = 'url(../images/nigth.jpg)';
+    document.body.style.backgroundImage = 'url(images/nigth.jpg)';
     greeting.textContent = 'Good Evening';
     document.body.style.color = 'white';
   }
