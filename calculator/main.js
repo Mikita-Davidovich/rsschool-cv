@@ -9,19 +9,19 @@ let MemoryPendingOperation = '';
 
 
 for (let i = 0; i < numbers.length; i++) {
-  let number = numbers[i];
+  const number = numbers[i];
   number.addEventListener('click', (e) => {
     numberPress(e.target.textContent)
   });
 }
 for (let i = 0; i < operations.length; i++) {
-  let operation = operations[i];
+  const operation = operations[i];
   operation.addEventListener('click', (e) => {
     operationPress(e.target.textContent)
   })
 }
 for (let i = 0; i < clearBtns.length; i++) {
-  let clearBtn = clearBtns[i];
+  const clearBtn = clearBtns[i];
   clearBtn.addEventListener('click', (e) => {
     clear(e.srcElement.id)
   });
@@ -88,7 +88,6 @@ function clear(id) {
     MemoryNewNumber = true;
   }else if( id === 'c') {
     screen.value = '0';
-    MemoryNewNumber = true;
     MemoryPendingOperation = '';
     MemoryCurrentNumber = 0;
   }
