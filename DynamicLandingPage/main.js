@@ -48,7 +48,7 @@ function setBackgroundGreeting() {
     document.body.style.backgroundImage = 'url(images/afternoon.jpg)';
     greeting.textContent = 'Good Afternoon';
   } else {
-    document.body.style.backgroundImage = 'url(images/nigth.jpg)';
+    document.body.style.backgroundImage = 'url(images/night.jpg)';
     greeting.textContent = 'Good Evening';
     document.body.style.color = 'white';
   }
