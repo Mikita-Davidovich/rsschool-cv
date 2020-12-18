@@ -1,8 +1,8 @@
 const numbers = document.querySelectorAll('.button-number');
 const operations = document.querySelectorAll('.button-operation');
-const dot = document.getElementById('dot');
 const clearBtns = document.querySelectorAll('.button-clear');
-const screen = document.getElementById('screen')
+const screen = document.getElementById('screen');
+const dot = document.querySelector('.button-dot');
 let MemoryCurrentNumber = 0;
 let MemoryNewNumber = false;
 let MemoryPendingOperation = '';
@@ -10,24 +10,24 @@ let MemoryPendingOperation = '';
 
 for (let i = 0; i < numbers.length; i++) {
   const number = numbers[i];
-  number.addEventListener('click', (e) => {
-    numberPress(e.target.textContent)
+  number.addEventListener('click', () => {
+    numberPress(number.value)
   });
 }
 for (let i = 0; i < operations.length; i++) {
   const operation = operations[i];
-  operation.addEventListener('click', (e) => {
-    operationPress(e.target.textContent)
+  operation.addEventListener('click', () => {
+    operationPress(operation.value)
   })
 }
 for (let i = 0; i < clearBtns.length; i++) {
   const clearBtn = clearBtns[i];
-  clearBtn.addEventListener('click', (e) => {
-    clear(e.srcElement.id)
+  clearBtn.addEventListener('click', () => {
+    clear(clearBtn.value)
   });
 }
-dot.addEventListener('click', (e) => {
-  decimal(e.target.textContent)
+dot.addEventListener('click', () => {
+  decimal(dot.value)
 })
 
 function numberPress(number) {
@@ -35,7 +35,7 @@ function numberPress(number) {
     screen.value = number;
     MemoryNewNumber = false;
   }
-  else{
+  else {
     if (screen.value === '0') {
       screen.value = number
       }
@@ -45,23 +45,22 @@ function numberPress(number) {
   }
 }
 
-
 function operationPress(oper) {
   let localOperationMemory = screen.value;
-  if (MemoryNewNumber &&  MemoryPendingOperation !== '='){
+  if (MemoryNewNumber &&  MemoryPendingOperation !== '=') {
     screen.value = MemoryCurrentNumber;
     }
-  else{
+  else {
     MemoryNewNumber = true;
-    if (MemoryPendingOperation === '+'){
+    if (MemoryPendingOperation === '+') {
       MemoryCurrentNumber += parseFloat(localOperationMemory);
-    }else if (MemoryPendingOperation === '-'){
+    } else if (MemoryPendingOperation === '-') {
       MemoryCurrentNumber -= parseFloat(localOperationMemory);
-    }else if (MemoryPendingOperation === '*'){
+    } else if (MemoryPendingOperation === '*') {
       MemoryCurrentNumber *= parseFloat(localOperationMemory);
-    }else if (MemoryPendingOperation === '/'){
+    } else if (MemoryPendingOperation === '/') {
       MemoryCurrentNumber /= parseFloat(localOperationMemory);
-    }else{
+    } else {
       MemoryCurrentNumber = parseFloat(localOperationMemory);
     }
     screen.value = MemoryCurrentNumber;
@@ -69,12 +68,12 @@ function operationPress(oper) {
   }
 }
 
- function decimal(argument) {
+ function decimal() {
   let localDecimalMemory = screen.value;
-  if (MemoryNewNumber){
+  if (MemoryNewNumber) {
     localDecimalMemory = '0.';
     MemoryNewNumber = false;
-  }else{
+  } else {
     if (localDecimalMemory.indexOf('.') === -1) {
       localDecimalMemory += '.';
     }
@@ -82,11 +81,11 @@ function operationPress(oper) {
   screen.value = localDecimalMemory;
 }
 
-function clear(id) {
-  if (id === 'ce') {
+function clear(value) {
+  if (value === 'CE') {
     screen.value = '0';
     MemoryNewNumber = true;
-  }else if( id === 'c') {
+  } else if( value === 'C') {
     screen.value = '0';
     MemoryPendingOperation = '';
     MemoryCurrentNumber = 0;
