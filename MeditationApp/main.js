@@ -27,9 +27,9 @@ const app = () => {
   //Pick different sounds
 
   sounds.forEach(sound => {
-    sound.addEventListener('click', function() {
-      song.src = this.getAttribute('data-sound');
-      video.src = this.getAttribute('data-video');
+    sound.addEventListener('click', () => {
+      song.src = sound.getAttribute('data-sound');
+      video.src = sound.getAttribute('data-video');
       checkPlaying(song);
     });
   });
@@ -43,8 +43,8 @@ const app = () => {
   //Select Sound
 
   timeSelect.forEach(option => {
-    option.addEventListener('click', function() {
-      duration = this.getAttribute('data-time');
+    option.addEventListener('click',() => {
+      duration = option.getAttribute('data-time');
       timeDisplay.textContent = `${Math.floor(duration / 60)}:${Math.floor(duration % 60)}`;
     });
   });
