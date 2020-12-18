@@ -18,15 +18,15 @@ html{
 }
 .key{
   color: white;
-  border: .3rem solid rgb(83, 26, 26);
+  border: .3rem solid #531a1a;
   padding: 1rem 0.7rem;
   margin: 1rem;
   font-size: 2rem;
   background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  text-shadow: 0 0 .5rem #000000;
   text-align: center;
   width: 13rem;
-  transition: 0.1s all;
+  transition: .1s all;
 }
 .letter{
   display: block;
