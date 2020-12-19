@@ -27,6 +27,8 @@ html{
   text-align: center;
   width: 13rem;
   transition: .1s all;
+  cursor: pointer;
+  user-select: none;
 }
 .letter{
   display: block;
