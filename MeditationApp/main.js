@@ -66,11 +66,11 @@ const app = () => {
   //Animate the circle
 
   song.ontimeupdate = () => {
-    let currentTime = song.currentTime;
-    let elapsed = duration - currentTime;
-    let seconds = Math.floor(elapsed % 60);
-    let minutes = Math.floor(elapsed / 60);
-    let progress = outlineLength - (currentTime / duration) * outlineLength;
+    const currentTime = song.currentTime;
+    const elapsed = duration - currentTime;
+    const seconds = Math.floor(elapsed % 60);
+    const minutes = Math.floor(elapsed / 60);
+    const progress = outlineLength - (currentTime / duration) * outlineLength;
     outline.style.strokeDashoffset = progress;
 
     //Animate the text

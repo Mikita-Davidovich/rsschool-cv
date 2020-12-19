@@ -41,7 +41,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 220vh;
   z-index: -1;
 }
 .time-buttons-and-weather{
