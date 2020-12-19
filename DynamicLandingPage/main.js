@@ -58,7 +58,8 @@ function setBackgroundGreeting() {
 //Get Name
 
 function getName() {
-  name.textContent =localStorage.getItem('name') === null ? '[Enter Your Name]': localStorage.getItem('name');
+  localStorage.getItem('name') === null ? name.textContent = '[Enter Your Name]':
+  name.textContent = localStorage.getItem('name');
 }
 
 //Set Name
@@ -76,7 +77,8 @@ function setName(e) {
 
 //Get Focus
 function getFocus() {
-  focus.textConten = localStorage.getItem('focus') === null ? '[Enter Your Focus]':localStorage.getItem('focus');
+  localStorage.getItem('focus') === null ? focus.textContent = '[Enter Your Focus]':
+  focus.textContent = localStorage.getItem('focus');
 }
 
 //Set Focus
