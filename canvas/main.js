@@ -17,7 +17,6 @@ let direction = true;
 
 function draw(e) {
   if (!isDrawing) return; 
-  console.log(e)
   ctx.strokeStyle = color.value;
   ctx.lineWidth = size.value;
   // ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`; Это все нужно для рандомного цвета и размера
@@ -51,3 +50,4 @@ canvas.addEventListener('mousedown', (e) => {
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
+
