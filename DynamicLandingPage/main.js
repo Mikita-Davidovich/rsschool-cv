@@ -1,8 +1,8 @@
-const time = document.getElementById('time'),
-  greeting = document.getElementById('greeting'),
-  name = document.getElementById('name'),
-  focus = document.getElementById('focus'),
-  enterPress = 13;
+const time = document.getElementById('time');
+const greeting = document.getElementById('greeting');
+const name = document.getElementById('name');
+const focus = document.getElementById('focus');
+const enterPress = 13;
 
 //Options
 
@@ -11,10 +11,10 @@ const ShowAmPm = true;
 //Time
 
 function showTime() {
-  let today = new Date(),
-    hours = today.getHours(),
-    minutes = today.getMinutes(),
-    seconds = today.getSeconds();
+  let today = new Date();
+  let hours = today.getHours();
+  let minutes = today.getMinutes();
+  let seconds = today.getSeconds();
 
   //Set AM or PM
 
@@ -58,7 +58,7 @@ function setBackgroundGreeting() {
 //Get Name
 
 function getName() {
-  name.textContent =localStorage.getItem('name') === null ? '[Enter Your Name]': localStorage.getItem('name');
+  name.textContent = localStorage.getItem('name') === null ? '[Enter Your Name]' : localStorage.getItem('name');
 }
 
 //Set Name
@@ -74,7 +74,7 @@ function setName(e) {
   }
 }
 function getFocus() {
-  focus.textConten = localStorage.getItem('focus') === null ? '[Enter Your Focus]':localStorage.getItem('focus');
+  focus.textConten = localStorage.getItem('focus') === null ? '[Enter Your Focus]' : localStorage.getItem('focus');
 }
 
 //Set Focus
