@@ -48,10 +48,11 @@ function setBackgroundGreeting() {
   } else if (hour < 18){
     document.body.style.backgroundImage = 'url(images/afternoon.jpg)';
     greeting.textContent = 'Good Afternoon';
+    document.body.style.color = 'yellow'
   } else {
     document.body.style.backgroundImage = 'url(images/night.jpg)';
     greeting.textContent = 'Good Evening';
-    document.body.style.color = 'white';
+    document.body.style.color = '#ffff';
   }
 }
 
