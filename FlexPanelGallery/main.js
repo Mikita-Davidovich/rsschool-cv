@@ -1,10 +1,10 @@
 const panels = document.querySelectorAll('.panels');
-const anotherWords = document.querySelector('.another-word');
 
 //Open
 
 function toggleOpen() {
-  this.classList.toggle('open');
+  panels.forEach(panel => panel.classList.remove("open"));
+  this.classList.add('open');
 }
 
 //Active
@@ -17,3 +17,4 @@ function toggleActive(e) {
 
 panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
