@@ -1,9 +1,9 @@
-const imputs = document.querySelectorAll('.imput')
+const inputs = document.querySelectorAll('.input')
 
 function handleUpDate(){
   const suffix = this.dataset.sizing || '';
   document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
 }
 
-imputs.forEach(imput => imput.addEventListener('change', handleUpDate));
-imputs.forEach(imput => imput.addEventListener('mousemove', handleUpDate));
+inputs.forEach(input => input.addEventListener('change', handleUpDate));
+inputs.forEach(input => input.addEventListener('mousemove', handleUpDate));
