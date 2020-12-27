@@ -16,3 +16,6 @@ body{
 .size,.color{
   margin-left: 20px;
 }
+.canvas{
+  cursor: crosshair;
+}
