@@ -14,7 +14,6 @@ body{
   user-select: none;
 }
 .score{
-  margin: 0 auto;
   text-align: center;
   font-size: 30px;
   width: 300px;
@@ -77,5 +76,16 @@ body{
 }
 .hole.active .mole{
   top: 0;
+}
+.main-time{
+  font-size: 30px;
+  text-align: center;
+  color: #ff0000;
+  margin-left: 50px;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 

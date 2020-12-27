@@ -6,13 +6,13 @@ const easeMode = document.querySelector('.ease-mode');
 const mediumMode = document.querySelector('.medium-mode');
 const hardMode = document.querySelector('.hard-mode');
 const extremalMode = document.querySelector('.extremal-mode');
+const timer = document.querySelector('.time')
 let lastHole;
 let timeUp = false;// время истекло
 let score = 0;
-
-function getScore(){
-  scoreBoard.textContent = localStorage.getItem('Score') === null ? 0 : localStorage.getItem('Score');
-}
+let sec = 10;
+const min = 0;
+timer.innerHTML = `${min}:${sec}`;
 
 function randomTime(min, max){
   return  Math.round (Math.random() * (max - min) + min);
@@ -53,6 +53,10 @@ function clickOnMole(e){
   localStorage.setItem('Score', scoreBoard.textContent);
 }
 
+function getScore (){
+  scoreBoard.textContent = localStorage.getItem('Score') === null ? 0 : localStorage.getItem('Score');
+}
+
 function startStandartMode(){
   startGame(300, 2000)
 }
@@ -73,9 +77,29 @@ function startExtremalMode(){
   startGame(100, 500);
 }
 
+function startTimer(){
+  if(sec < 0) {
+    return
+  } else {
+  timer.innerHTML = `${min}:${addZero(sec--)}`;
+  setTimeout(startTimer, 1000); 
+  }
+}
+
+function addZero(n) {
+  return (parseInt(n , 10) < 10 ? '0': '') + n;
+}
+
 moles.forEach(mole => mole.addEventListener('click',clickOnMole));
 standartMode.addEventListener('click' , startStandartMode);
+standartMode.addEventListener('click' , startTimer);
 easeMode.addEventListener('click', startEaseMode);
+easeMode.addEventListener('click', startTimer);
 mediumMode.addEventListener('click', startMediumMode);
+mediumMode.addEventListener('click', startTimer);
 hardMode.addEventListener('click', startHardMode);
+hardMode.addEventListener('click', startTimer);
 extremalMode.addEventListener('click', startExtremalMode);
+extremalMode.addEventListener('click', startTimer);
+getScore();
+addZero();
