@@ -44,7 +44,7 @@ body{
   bottom: -30px;
 }
 .mole{
-  background: url('/mole/mole.svg') bottom center no-repeat;
+  background: url('mole/mole.svg') bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   width: 100%;
