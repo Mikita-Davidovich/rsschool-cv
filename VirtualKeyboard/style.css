@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.keyboard{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #065f28;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .6);
+  user-select: none;
+  transition: .9s;
+  height: 100px;
+}
+.keyboard-hidden{
+  transform: translateY(150%)
+}
+.keyboard-keys{
+  text-align: center;
+}
+.keyboard-key{
+  height: 50px;
+  max-width: 90px;
+  width: 7%;
+  margin: 5px;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  position: relative;
+}
+.keyboard-key:active{
+  background-color: #065f28;
+}
+/* широкие кнопки*/
+.keyboard-key-wide{
+  width: 20%;
+}
+/* пробел*/
+.keyboard-key-extra-wide{
+  width: 35%;
+  max-width: 500px;
+}
+/*точка для капса*/
+.keyboard-key-activatable::after{
+  content: '';
+  top: 5px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* когда нажали капс */
+.keyboard-key-active::after{
+  background-color: blue;
+}
+/*Самая темная кнопка*/
+.keyboard-key-dark{
+  background-color: rgb(202, 157, 157);
+}
