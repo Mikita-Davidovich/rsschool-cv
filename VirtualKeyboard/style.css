@@ -12,7 +12,6 @@
   box-shadow: 0 0 50px rgba(0, 0, 0, .6);
   user-select: none;
   transition: .9s;
-  height: 100px;
 }
 .keyboard-hidden{
   transform: translateY(150%)
