@@ -53,7 +53,7 @@ const Keyboard = {
 
     keyLayout.forEach(key => {
       const keyElement = document.createElement('button');
-      const insertLineBreak = ['backspase', 'p', 'enter', '?'].indexOf(key) !== -1;
+      const insertLineBreak = ['backspace', 'p', 'enter', '?'].indexOf(key) !== -1;
 
       keyElement.classList.add('keyboard-key');
 
