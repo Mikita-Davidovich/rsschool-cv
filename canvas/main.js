@@ -20,7 +20,7 @@ function draw(e) {
   ctx.lineWidth = size.value;
   // ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`; Это все нужно для рандомного цвета и размера
   ctx.beginPath();// позволяет рисовать разными линиями ;начинает новый путь
-  ctx.moveTo(lastX, lastY);// Пояснить чуток
+  ctx.moveTo(lastX, lastY);
   ctx.lineTo(e.offsetX, e.offsetY);// рисует линию до точки
   ctx.stroke(); // отображает путь
   [lastX, lastY] = [e.offsetX, e.offsetY];
@@ -48,6 +48,6 @@ canvas.addEventListener('mousedown', (e) => {
 
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mouseup', () => isDrawing = false);
-canvas.addEventListener('mouseout', () => isDrawing = false);// что делает?
+canvas.addEventListener('mouseout', () => isDrawing = false);
 
 
