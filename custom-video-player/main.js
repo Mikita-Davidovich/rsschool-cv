@@ -1,11 +1,11 @@
-const player = document.querySelector('.player'),
-      video = player.querySelector('.video'),
-      progress = player.querySelector('.progress'),
-      progressBar = player.querySelector('.progress-filled'),
-      toggle = player.querySelector('.toggle'),
-      skipButtons = player.querySelectorAll(`[data-skip]`),
-      ranges = player.querySelectorAll('.player-slider'),
-      fullScreen = player.querySelector('.full-screen');
+const player = document.querySelector('.player');
+const video = player.querySelector('.video');
+const progress = player.querySelector('.progress');
+const progressBar = player.querySelector('.progress-filled');
+const toggle = player.querySelector('.toggle');
+const skipButtons = player.querySelectorAll(`[data-skip]`);
+const ranges = player.querySelectorAll('.player-slider');
+const fullScreen = player.querySelector('.full-screen');
 
 function togglePlay() {
   video.paused ? video.play() : video.pause();
@@ -17,11 +17,11 @@ function skip() {
   video.currentTime += parseFloat(this.dataset.skip);
 }
 function handleRangeUpdate() { 
-  video[this.name] = this.value;// Что то я не понял как это работает.
+  video[this.name] = this.value;
 }
 function handleProgress() {
-  const persent = (video.currentTime / video.duration) * 100;
-  progressBar.style.flexBasis = `${persent}%`;
+  const percent = (video.currentTime / video.duration) * 100;
+  progressBar.style.flexBasis = `${percent}%`;
 }
 function rewind(e) {
   const rewindTime  = (e.offsetX / progress.offsetWidth) * video.duration;
