@@ -7,3 +7,5 @@ https://Mikita-Davidovich.github.io/rsschool-cv/CSSVariablesAndJS - **CSSVariabl
 
 https://Mikita-Davidovich.github.io/rsschool-cv/DynamicLandingPage - **DynamicLandingPage**
 
+https://Mikita-Davidovich.github.io/rsschool-cv/DrumKit - **DrumKit**
+
