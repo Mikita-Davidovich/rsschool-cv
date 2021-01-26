@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  background-image: url('image/backgroundImage.jpg');
+  background-size: cover;
+  font-family: Poppins, Tahoma, sans-serif;
+}
+.keys{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.key{
+  color: white;
+  border: .3rem solid #531a1a;
+  padding: 1rem 0.7rem;
+  margin: 1rem;
+  font-size: 2rem;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem #000000;
+  text-align: center;
+  width: 13rem;
+  transition: .1s all;
+  cursor: pointer;
+  user-select: none;
+}
+.letter{
+  display: block;
+  font-size: 5rem;
+}
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #ffc600;
+}
+.active{
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}  
