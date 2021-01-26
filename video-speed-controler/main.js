@@ -13,5 +13,7 @@ function speedController(e) {
   speedBar.textContent = playbackRate.toFixed(2) + 'x';
   video.playbackRate = playbackRate;
 }
-
-speed.addEventListener('mousemove', speedController);
+let flag = false
+speed.addEventListener('mousemove', (e) => flag && speedController(e));
+speed.addEventListener('mouseup', () => flag = false);
+speed.addEventListener('mousedown', () => flag = true);
