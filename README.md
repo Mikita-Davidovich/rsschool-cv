@@ -13,3 +13,5 @@ https://Mikita-Davidovich.github.io/rsschool-cv/DrumKit - **DrumKit**
 
 https://Mikita-Davidovich.github.io/rsschool-cv/canvas - **Canvas**
 
+https://Mikita-Davidovich.github.io/rsschool-cv/custom-video-player - **Custom-video-player**
+
