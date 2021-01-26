@@ -11,4 +11,5 @@ https://Mikita-Davidovich.github.io/rsschool-cv/DynamicLandingPage - **DynamicLa
 
 https://Mikita-Davidovich.github.io/rsschool-cv/DrumKit - **DrumKit**
 
+https://Mikita-Davidovich.github.io/rsschool-cv/canvas - **Canvas**
 
