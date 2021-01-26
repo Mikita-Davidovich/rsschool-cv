@@ -49,14 +49,15 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 100%;
-  transition:all .4s;
+  transform: translateY(100%);
+  transition: .4s;
   cursor: pointer;
 }
 .buttons{
   display: flex;
   justify-content: center;
   margin: 30px 0  10px 0;
+
 }
 .play{
   color: #1c139e;
@@ -68,14 +69,14 @@ body{
   background-color: #f0c733;
   user-select: none;
   font-size: 20px;
-  font-family: 'Amatic SC', cursive; /*Почему не работает когда стоит для всего документа*/
+  font-family: 'Amatic SC', cursive; 
+  transition: .7s;
 }
 .play:hover{
   transform: scale(1.1);
-  transition: .7s;/* Почему резко убираеться масштаб*/
 }
 .hole.active .mole{
-  top: 0;
+  transform: translateY(0);
 }
 .main-time{
   font-size: 30px;
@@ -88,4 +89,3 @@ body{
   align-items: center;
   justify-content: center;
 }
-
