@@ -15,3 +15,5 @@ https://Mikita-Davidovich.github.io/rsschool-cv/canvas - **Canvas**
 
 https://Mikita-Davidovich.github.io/rsschool-cv/custom-video-player - **Custom-video-player**
 
+https://Mikita-Davidovich.github.io/rsschool-cv/video-speed-controler - **Video-speed-controler**
+
