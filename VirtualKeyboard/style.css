@@ -56,7 +56,7 @@
 }
 /* широкие кнопки*/
 .keyboard-key-wide{
-  width: 20%;
+  width: 12%;
 }
 /* пробел*/
 .keyboard-key-extra-wide{
@@ -82,3 +82,6 @@
 .keyboard-key-dark{
   background-color: rgb(24, 71, 31);
 }
+
+
+
