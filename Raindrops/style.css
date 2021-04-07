@@ -34,7 +34,7 @@
 }
 
 .first-wave{
-  background: url(/image/wave4.svg) repeat-x;
+  background: url(/Raindrops/image/wave4.svg) repeat-x;
   background-size: contain;
   width: 7000px;
   height: var(--wave-height);
@@ -45,7 +45,7 @@
 }
 
 .second-wave{
-  background: url(/image/wave4.svg) repeat-x;
+  background: url(/Raindrops/image/wave4.svg) repeat-x;
   background-size: contain;
   width: 7000px;
   height: var(--wave-height);
@@ -247,7 +247,7 @@
 }
 
 .explosion{
-  background-image: url(/image/drop5.png);
+  background-image: url(/Raindrops/image/drop5.png);
   background-size: cover;
   border: none;
   background-position: center;
