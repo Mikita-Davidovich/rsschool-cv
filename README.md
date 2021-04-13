@@ -17,3 +17,5 @@ https://Mikita-Davidovich.github.io/rsschool-cv/custom-video-player - **Custom-v
 
 https://Mikita-Davidovich.github.io/rsschool-cv/video-speed-controler - **Video-speed-controler**
 
+https://Mikita-Davidovich.github.io/rsschool-cv/video-speed-controler - **Video-speed-controler**
+
