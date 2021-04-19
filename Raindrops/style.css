@@ -33,27 +33,23 @@
   display: none;
 }
 
-.first-wave{
-  background: url(/Raindrops/image/wave4.svg) repeat-x;
+.wave{
+  background: url(image/wave4.svg) repeat-x;
   background-size: contain;
   width: 7000px;
   height: var(--wave-height);
   position: absolute;
   bottom: -10%;
-  animation: wave 8s infinite linear ;
   transition: 2s;
 }
 
+.first-wave{
+  animation: wave 8s infinite linear;
+}
+
 .second-wave{
-  background: url(/Raindrops/image/wave4.svg) repeat-x;
-  background-size: contain;
-  width: 7000px;
-  height: var(--wave-height);
-  position: absolute;
-  bottom: -10%;
   animation: wave 7s infinite linear ;
   opacity: .9;
-  transition: 2s;
 }
 
 @keyframes wave{
@@ -247,7 +243,7 @@
 }
 
 .explosion{
-  background-image: url(/Raindrops/image/drop5.png);
+  background-image: url(image/drop5.png);
   background-size: cover;
   border: none;
   background-position: center;
@@ -439,5 +435,3 @@
     font-size: 50px;
   }
 }
-
-
