@@ -19,3 +19,5 @@ https://Mikita-Davidovich.github.io/rsschool-cv/video-speed-controler - **Video-
 
 https://Mikita-Davidovich.github.io/rsschool-cv/WhackAMole - **Whack-A-Mole**
 
+https://Mikita-Davidovich.github.io/rsschool-cv/rain-drop - **Rain-Drop**
+
