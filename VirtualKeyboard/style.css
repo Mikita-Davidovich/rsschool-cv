@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.heading{
+  margin-left: 20px;
+}
+.use-keyboard-input{
+  width: 95%;
+  height: 300px;
+  margin-left: 20px;
+  resize: none;
+}
+.use-keyboard-input::placeholder  {
+  color: red;
+  text-align: center;
+  padding-top: 120px;
+}
+.keyboard{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #065f28;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .6);
+  user-select: none;
+  transition: .4s;
+  padding: 5px 0;
+}
+.keyboard-hidden{
+  transform: translateY(150%)
+}
+.keyboard-keys{
+  text-align: center;
+}
+.keyboard-key{
+  height: 45px;
+  max-width: 90px;
+  width: 6%;
+  margin: 3px;
+  background-color:rgba(168, 235, 197, 0.3);
+  color: #ffffff;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.keyboard-key:active{
+  background-color: #065f28;
+}
+/* широкие кнопки*/
+.keyboard-key-wide{
+  width: 12%;
+}
+/* пробел*/
+.keyboard-key-extra-wide{
+  width: 35%;
+  max-width: 500px;
+}
+/*точка для капса*/
+.keyboard-key-activatable::after{
+  content: '';
+  top: 5px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* когда нажали капс */
+.keyboard-key-active::after{
+  background-color: rgb(37, 231, 19);
+}
+/*Самая темная кнопка*/
+.keyboard-key-dark{
+  background-color: rgb(24, 71, 31);
+}
+
+
+
